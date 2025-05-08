@@ -1,12 +1,12 @@
 # pariksha 🧪
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/DevNavix/go-pariksha)](https://goreportcard.com/report/github.com/DevNavix/go-pariksha)
+[![Go Report Card](https://goreportcard.com/badge/github.com/DevNavix/pariksha)](https://goreportcard.com/report/github.com/DevNavix/pariksha)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Go Version](https://img.shields.io/badge/go-1.20+-blue)](https://golang.org/dl/)
 
-**go-pariksha** is a lightweight and expressive testing + benchmarking toolkit for Go, tailored to HTTP API test cases using the [Gin](https://github.com/gin-gonic/gin) web framework.
+**pariksha** is a lightweight and expressive testing + benchmarking toolkit for Go, tailored to HTTP API test cases using the [Gin](https://github.com/gin-gonic/gin) web framework.
 
-Inspired by the Sanskrit word _**Pariksha**_ (परीक्षा), meaning **"test"** or **"examination"**, this framework is built to help developers write **cleaner, faster, and more structured** test code with minimal boilerplate.
+Inspired by the Sanskrit word _**Pariksha**_ (परीक्षा), meaning **"test"** or **"examination"**, this framework is built to help developers write **cleaner, faster, and more structured** test code with minimal boilerplate for API's.
 
 ---
 
@@ -23,4 +23,4 @@ Inspired by the Sanskrit word _**Pariksha**_ (परीक्षा), meaning **
 ## 📦 Installation
 
 ```bash
-go get github.com/DevNavix/go-pariksha
+go get github.com/DevNavix/pariksha
