@@ -1,2 +1,26 @@
-# pariksha
-Package to write test cases for api using gin package
+# go-pariksha 🧪
+
+[![Go Report Card](https://goreportcard.com/badge/github.com/DevNavix/go-pariksha)](https://goreportcard.com/report/github.com/DevNavix/go-pariksha)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Go Version](https://img.shields.io/badge/go-1.20+-blue)](https://golang.org/dl/)
+
+**go-pariksha** is a lightweight and expressive testing + benchmarking toolkit for Go, tailored to HTTP API test cases using the [Gin](https://github.com/gin-gonic/gin) web framework.
+
+Inspired by the Sanskrit word _**Pariksha**_ (परीक्षा), meaning **"test"** or **"examination"**, this framework is built to help developers write **cleaner, faster, and more structured** test code with minimal boilerplate.
+
+---
+
+## ✨ Features
+
+- ✅ Declarative API test case structure
+- 🔁 Reusable setup for HTTP requests and contexts
+- 🧪 Native support for `*testing.T` and `*testing.B`
+- ⚙️ Built-in integration with `httptest` and `gin.Context`
+- 🚀 Designed for speed, clarity, and code reuse
+
+---
+
+## 📦 Installation
+
+```bash
+go get github.com/DevNavix/go-pariksha
