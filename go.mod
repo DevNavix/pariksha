@@ -1,4 +1,4 @@
-module pariksha
+module github.com/DevNavix/pariksha
 
 go 1.22.3
 
