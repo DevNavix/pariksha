@@ -21,9 +21,6 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-const (
-	LogResponse = false // To print api response we should enable this flag
-)
 
 type APITestCase struct {
 	Name         string

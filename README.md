@@ -23,4 +23,4 @@ Inspired by the Sanskrit word _**Pariksha**_ (परीक्षा), meaning **
 ## 📦 Installation
 
 ```bash
-go get github.com/DevNavix/pariksha@v1.2.2
+go get github.com/DevNavix/pariksha@v1.0.1
