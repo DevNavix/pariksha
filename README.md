@@ -1,4 +1,4 @@
-# go-pariksha 🧪
+# pariksha 🧪
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/DevNavix/go-pariksha)](https://goreportcard.com/report/github.com/DevNavix/go-pariksha)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
