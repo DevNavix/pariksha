@@ -11,7 +11,7 @@ var (
 		"Content-Type": "application/json",
 	}
 	// To print api response we should enable this flag
-	LogResponse = false 
+	LogResponse = false
 	// Formats in which profiling results will be saved.
 	// Options: "png", "pdf". Add both to enable both outputs.
 	ProfilingOutputFormats = []string{"png"} //ex: []string{"png"} or []string{"pdf"} or []string{"png", "pdf"}

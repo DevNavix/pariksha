@@ -21,7 +21,6 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-
 type APITestCase struct {
 	Name         string
 	Method       string
@@ -35,22 +34,6 @@ type APITestCase struct {
 	T            *testing.T
 	B            *testing.B
 	FunctionName string
-}
-
-// -------------- Example usage of RunAPITest ----------
-func TestExampleAPI(t *testing.T) {
-	tests := []APITestCase{
-		{
-			Name:         "Example Test Case",
-			Method:       http.MethodGet,
-			URL:          "/example",
-			HandlerFunc:  func(c *gin.Context) { c.JSON(http.StatusOK, gin.H{"message": "success"}) },
-			ExpectedCode: http.StatusOK,
-			T:            t,
-		},
-	}
-	// Run the test cases using the Helper framework
-	RunAPITest(tests)
 }
 
 // RunAPITest is a helper function to execute a series of API test cases.
@@ -136,22 +119,6 @@ func (tc APITestCase) SetAPITestPathParams() (params gin.Params) {
 	return
 }
 
-// -------------- Example usage of RunBenchmark Or profiling ----------
-func BenchmarkExample(b *testing.B) {
-	// Add a true test case which would hit api successfully...
-	testCase := APITestCase{
-		Name:        "BenchmarkExample",
-		Method:      http.MethodGet,
-		URL:         "/example",
-		HandlerFunc: func(c *gin.Context) { c.JSON(http.StatusOK, gin.H{"message": "success"}) },
-		B:           b,
-	}
-
-	// Use func RunBenchmark to perform benchmarking, and Profiling if want to perform profiling.
-	testCase.RunBenchmark()
-	// testCase.RunWithProfiling()
-}
-
 // To executes a benchmark test for the API test case.
 // It marks the function as a helper for better error reporting and runs
 // the benchmark using the testing.B framework. The benchmark repeatedly
@@ -160,7 +127,7 @@ func BenchmarkExample(b *testing.B) {
 //
 // This method is designed to be used in conjunction with the Go testing
 // package's benchmarking tools.
-func (tc *APITestCase) RunBenchmark() {
+func RunBenchmark(tc APITestCase) {
 	tc.B.Helper() // Mark this as a helper function for better error reporting
 	tc.B.Run(tc.Name, func(b *testing.B) {
 		for i := 0; i < tc.B.N; i++ {
@@ -169,10 +136,10 @@ func (tc *APITestCase) RunBenchmark() {
 	})
 }
 
-// RunWithProfiling executes the API test case with profiling enabled.
+// RunProfiling executes the API test case with profiling enabled.
 // This method is useful for analyzing the performance of the test case
 // by collecting profiling data during its execution.
-func (tc APITestCase) RunWithProfiling() {
+func RunProfiling(tc APITestCase) {
 	// Mark this method as a test helper to improve test failure reports
 	tc.B.Helper()
 
